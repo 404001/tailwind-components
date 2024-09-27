@@ -49,3 +49,54 @@
   </div>
 </div>
 ```
+
+```html
+<div class="bg-[#1b1b1b] p-4 border border-white/10 rounded-lg">
+  <div class="flex items-center justify-center my-4">
+    <h2 class="text-white text-[22px] font-sans font-bold">Login</h2>
+  </div>
+  <div class="flex flex-col gap-4">
+    <div class="flex flex-col">
+      <span class="text-white/70 font-sans text-[14px] my-1">Username</span>
+      <input
+        type="text"
+        name="text"
+        class="px-3 w-[280px] text-[14px] bg-[#171616] text-white p-2 border border-white/10 rounded-md outline-none ring-2 ring-blue-500/0 focus:ring-blue-500"
+        placeholder="Enter your username..."
+      />
+    </div>
+    <div class="flex flex-col">
+      <span class="text-white/70 font-sans text-[14px] my-1">Password</span>
+      <input
+        type="password"
+        name="text"
+        class="px-3 w-[280px] text-[14px] bg-[#171616] text-white p-2 border border-white/10 rounded-md outline-none ring-2 ring-blue-500/0 focus:ring-blue-500"
+        placeholder="Enter your password..."
+      />
+    </div>
+
+    <div class="flex flex-col mt-2">
+      <button
+        type="submit"
+        class="font-semibold px-3 w-full text-[14px] bg-blue-700 hover:bg-opacity-80 text-white p-2 border border-white/10 rounded-md outline-none"
+        placeholder="Enter your password..."
+      >
+        Sign in
+      </button>
+    </div>
+  </div>
+  <div class="flex items-center my-4">
+    <div class="flex-grow border-t border-white/20"></div>
+    <span class="mx-4 text-white/70">or</span>
+    <div class="flex-grow border-t border-white/20"></div>
+  </div>
+  <div class="flex flex-col mt-2">
+      <button
+        class="font-semibold px-3 w-full text-[14px] bg-zinc-800 hover:bg-opacity-80 text-white p-2 border border-white/10 rounded-md outline-none"
+        placeholder="Enter your password..."
+      >
+        GitHub
+      </button>
+    </div>
+</div>
+```
