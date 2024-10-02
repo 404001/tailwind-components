@@ -4,12 +4,20 @@ import { useState } from "react";
 
 const data = [
     {
+        label: "Getting Started",
+        links: [
+            { selected: true, label: "Instalation", url: "/instalation" },
+            { selected: false, label: "Overview", url: "/overview" },
+        ],
+    },
+    {
         label: "Components",
         links: [
-            { selected: true, label: "Button", url: "" },
-            { selected: false, label: "FileTrigger", url: "" },
-            { selected: false, label: "Input", url: "" },
-            { selected: false, label: "Label", url: "" },
+            { selected: false, label: "Button", url: "/button" },
+            { selected: false, label: "FileTrigger", url: "/file-trigger" },
+            { selected: false, label: "Input", url: "/input" },
+            { selected: false, label: "Label", url: "/label" },
+            { selected: false, label: "Tabs", url: "/tabs" },
         ],
     }
 ];
@@ -39,10 +47,10 @@ export default function Home() {
 
     return (
         <main className="flex items-center justify-center h-screen">
-            <div className="flex flex-col w-[200px] items-start">
+            <div className="flex flex-col w-[200px] h-[500px] items-start">
                 {data.map((tab, tabIndex) => (
                     <div key={tabIndex}>
-                        <div onClick={() => toggleTab(tabIndex)} className="flex items-center mb-2 space-x-2 select-none cursor-pointer">
+                        <div onClick={() => toggleTab(tabIndex)} className="flex items-center mb-2 mt-4 space-x-2 select-none cursor-pointer">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
                                 width="24"
